@@ -1,10 +1,10 @@
 var express = require('express');
 var http = require('http');
 
-var db = require('./database.js');
+var db = require('database');
 
 var app = express();
-db.setup({dburl: 'mongo'})
+db.setup({dburl: 'mongo'});
 
 app.set('port', process.env.PORT || 3000);
 
